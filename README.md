@@ -1,49 +1,52 @@
-
 # Digital Payments Analytics Dashboard
 
-An interactive Power BI dashboard designed to analyze digital payment transactions, customer activity, service performance, and payment trends.
+An interactive Power BI dashboard developed to analyze digital payment transactions, customer activity, service performance, and transaction trends.
 
-The project covers the complete analytics workflow, from data preparation and transformation to DAX-based KPI development and interactive dashboard reporting.
+The project follows an end-to-end analytics workflow covering data preparation, transformation, KPI development, data visualization, and business reporting.
 
-## Dashboard
+## Live Dashboard
 
-![Digital Payments Analytics Dashboard](Screenshots/dashboard.png)
+[View Interactive Power BI Dashboard](https://app.powerbi.com/groups/me/reports/5305b373-4f22-49e5-bdaa-6d482a2acd7d?ctid=93676573-395b-467d-b4e7-3e73253f9de5&pbi_source=linkShare)
+
+## Dashboard Preview
+
+![Digital Payments Analytics Dashboard](dashboard.png)
 
 ## Project Overview
 
-The dashboard provides a consolidated view of payment activity and enables analysis across different dimensions such as time, payment status, customer segments, services, and user transaction value.
+The dashboard provides a consolidated view of digital payment activity and enables analysis across transaction trends, customer segments, payment services, and transaction performance.
 
-The report focuses on the following areas:
+The analysis covers:
 
 - Transaction volume and transaction value
 - Monthly transaction trends
 - Payment success rate
 - Unique users
-- Age segment contribution
+- Customer age segments
 - Service-wise transaction value
 - Top users by transaction value
 - Weekday vs. weekend usage
 
 ## Technology Stack
 
-- **Power BI Desktop** – Dashboard development and visualization
-- **Power Query** – Data cleaning and transformation
-- **DAX** – KPI and analytical calculations
-- **Excel / CSV** – Data source
-- **GitHub** – Project documentation and version control
+- **Power BI Desktop** — Dashboard development and visualization
+- **Power Query** — Data cleaning and transformation
+- **DAX** — KPI and analytical calculations
+- **Excel** — Source data
+- **GitHub** — Project documentation and version control
 
 ## Data Preparation
 
 The source data was prepared using Power Query before developing the dashboard.
 
-The main preparation steps included:
+Key preparation steps included:
 
 - Removing duplicate records
 - Handling missing values
 - Correcting data types
 - Standardizing categorical fields
 - Creating month and weekday fields
-- Creating age segments
+- Creating customer age segments
 - Classifying weekday and weekend transactions
 - Validating transaction and payment status data
 
@@ -58,11 +61,9 @@ The cleaned dataset was structured in Power BI to support analysis across:
 - Transaction dates
 - Customer segments
 
-The data model was designed to ensure that filters and visuals interact correctly throughout the report.
+The data model was designed to ensure consistent filtering and interaction across the report.
 
 ## Key Performance Indicators
-
-The dashboard tracks the following primary KPIs:
 
 | KPI | Description |
 |---|---|
@@ -73,7 +74,7 @@ The dashboard tracks the following primary KPIs:
 
 ## DAX Measures
 
-Example measures used in the dashboard:
+The dashboard uses DAX measures to calculate key performance indicators.
 
 ```DAX
 Total Transactions =
@@ -109,25 +110,25 @@ DIVIDE(
 
 ## Dashboard Analysis
 
-### Transactions Over Time
+### Transaction Trends
 
-A monthly trend analysis is used to monitor changes in transaction volume and transaction value and identify periods of higher or lower activity.
+The monthly trend analysis tracks changes in transaction activity and transaction value over time, helping identify periods of higher and lower activity.
 
-### Age Segment Contribution
+### Customer Segmentation
 
-Customer activity is analyzed across different age segments to understand their contribution to overall payment activity.
+Customer activity is analyzed across different age segments to understand their contribution to overall digital payment usage.
 
-### Service Transaction Value
+### Service Performance
 
-Transaction value is compared across payment services to identify the services generating the highest contribution.
+Transaction value is compared across payment services to identify services with higher transaction contribution.
 
 ### Top 5 Users
 
-The dashboard identifies the top five users based on transaction value, providing visibility into high-value customer activity.
+The dashboard highlights the top five users based on transaction value, providing visibility into high-value customer activity.
 
 ### Weekday vs. Weekend Usage
 
-Transaction activity is compared between weekdays and weekends to identify differences in customer usage patterns.
+Transaction activity is compared between weekdays and weekends to understand customer usage patterns.
 
 ## Dashboard Features
 
@@ -168,15 +169,10 @@ Business Insights
 ## Repository Structure
 
 ```text
-digital-payments-analytics/
-│
-├── Dataset/
-│   └── transactions.csv
+Phonepay-Dashboard-using-PowerBi/
 │
 ├── Screenshots/
 │   └── dashboard.png
-│
-├── Digital_Payments_Analytics.pbix
 │
 └── README.md
 ```
@@ -201,16 +197,16 @@ digital-payments-analytics/
 
 ## Key Takeaways
 
-The dashboard provides a single view of payment performance and customer activity, making it easier to identify transaction trends, high-value users, service contribution, and usage patterns.
+The dashboard provides a single view of digital payment performance and customer activity, making it easier to identify transaction trends, high-value users, service contribution, and usage patterns.
 
-The project demonstrates the end-to-end Power BI workflow from **data preparation to business reporting**.
+The project demonstrates an end-to-end Power BI workflow from **data preparation to business reporting**.
 
 ## Resume Description
 
 **Digital Payments Analytics Dashboard | Power BI**
 
 - Developed an interactive Power BI dashboard to analyze digital payment transactions, customer activity, service performance, and payment success rates.
-- Cleaned and transformed transaction data using Power Query and created DAX measures for key performance indicators.
+- Cleaned and transformed transaction data using Power Query and developed DAX measures for key performance indicators.
 - Built interactive visualizations for transaction trends, customer segments, service-wise transaction value, top users, and weekday/weekend usage.
 
 ## Author
